@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic HTML Page</title>
+</head>
+<body>
+    <label for="inputField">Enter number 1</label>
+    <input type="number" id="num-1" value="0">
+    <label for="inputField">Enter number 2</label>
+    <input type="number" id="num-2" value="0">
+    <p id="total" >0</p>
+    <button id="add-btn" onclick="addBtn()"  >Add</button>
+    <button id="reset" onclick="resetBtn()" >reset</button>
+
+    <script >
+        const addBtn=document.getElementById('add-btn');
+        const resetBtn=document.getElementById('reset');
+        addBtn.addEventListener('click',()=>{
+            const num1=document.getElementById('num-1').value;
+            const num2=document.getElementById('num-2').value;
+            const total=Number(num1)+Number(num2);
+            document.getElementById('total').innerText=`Total is : ${total}`;
+        });
+        resetBtn.addEventListener('click',()=>{
+            document.getElementById('num-1').value=0;
+            document.getElementById('num-2').value=0;
+            document.getElementById('total').innerText='';
+        });
+    </script>
+</body>
+</html>
