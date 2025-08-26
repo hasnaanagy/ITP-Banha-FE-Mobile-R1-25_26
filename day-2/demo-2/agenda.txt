@@ -2,8 +2,9 @@
 --conditional rendering
 --list rendering
 --children
---class component lifecycle--->hooks
---useState
+--class component lifecycle--->
+--hooks
+----useState
 ----------------------------------------------
 continued in day 3 :
 --events onClick,onChange,onSubmit
