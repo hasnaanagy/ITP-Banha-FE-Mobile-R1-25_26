@@ -1,0 +1,12 @@
+--react bootstrap movies app
+--conditional rendering
+--list rendering
+--children
+--class component lifecycle--->hooks
+--useState
+----------------------------------------------
+continued in day 3 :
+--events onClick,onChange,onSubmit
+--forms with state (input - textarea - checkbox- select)
+--useEffect
+
